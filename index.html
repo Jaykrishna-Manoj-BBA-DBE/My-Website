@@ -1,0 +1,408 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Jaykrishna | Portfolio</title>
+
+<style>
+
+/* GENERAL SETTINGS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #080c09;
+    color: #c4d8c8;
+    font-family: "Courier New", monospace;
+    padding: 25px;
+}
+
+/* TERMINAL WINDOW */
+
+.terminal {
+    max-width: 950px;
+    margin: 40px auto;
+    background: #0c110d;
+    border: 1px solid #24452c;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 35px rgba(0,255,80,0.08);
+}
+
+/* TERMINAL TOP BAR */
+
+.topbar {
+    background: #202820;
+    padding: 14px 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-bottom: 1px solid #304432;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.red { background: #ff5f56; }
+.yellow { background: #ffbd2e; }
+.green { background: #27c93f; }
+
+.terminal-title {
+    color: #aab8aa;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 13px;
+}
+
+/* TERMINAL CONTENT */
+
+.content {
+    padding: 35px;
+    line-height: 1.8;
+}
+
+.prompt {
+    color: #55e879;
+    margin-top: 25px;
+    font-weight: bold;
+}
+
+.output {
+    color: #c4d8c8;
+    margin-top: 8px;
+    margin-bottom: 15px;
+}
+
+.name {
+    color: #55e879;
+    font-size: 42px;
+    margin: 10px 0;
+}
+
+.blue {
+    color: #6cb6ff;
+}
+
+.yellow-text {
+    color: #f0db76;
+}
+
+.muted {
+    color: #7d9380;
+}
+
+/* NAVIGATION COMMANDS */
+
+.commands {
+    margin: 20px 0;
+    padding: 20px;
+    background: #111a12;
+    border: 1px solid #29422d;
+    border-radius: 5px;
+}
+
+.commands a {
+    color: #6cb6ff;
+    text-decoration: none;
+    margin-right: 15px;
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+.commands a:hover {
+    color: #55e879;
+    text-decoration: underline;
+}
+
+/* SECTIONS */
+
+.section {
+    padding-top: 30px;
+    margin-top: 30px;
+    border-top: 1px dashed #29422d;
+}
+
+.section h2 {
+    color: #55e879;
+    font-size: 19px;
+    margin-bottom: 15px;
+}
+
+.section p {
+    margin-bottom: 10px;
+}
+
+/* CURSOR */
+
+.cursor {
+    display: inline-block;
+    width: 9px;
+    height: 18px;
+    background: #55e879;
+    vertical-align: middle;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+/* CONTACT */
+
+.contact a {
+    color: #6cb6ff;
+}
+
+/* MOBILE */
+
+@media(max-width:600px) {
+
+    body {
+        padding: 8px;
+    }
+
+    .terminal {
+        margin: 10px auto;
+    }
+
+    .content {
+        padding: 18px;
+    }
+
+    .name {
+        font-size: 29px;
+    }
+
+    .terminal-title {
+        font-size: 10px;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="terminal">
+
+    <!-- TOP BAR -->
+
+    <div class="topbar">
+
+        <div class="dot red"></div>
+        <div class="dot yellow"></div>
+        <div class="dot green"></div>
+
+        <div class="terminal-title">
+            jaykrishna@portfolio: ~
+        </div>
+
+    </div>
+
+
+    <div class="content">
+
+        <!-- INTRO -->
+
+        <p class="prompt">
+            jaykrishna@portfolio:~$ whoami
+        </p>
+
+        <h1 class="name">
+            Jaykrishna Manoj
+        </h1>
+
+        <p class="output">
+            Ambitious | Curious |
+            Empathetic
+        </p>
+
+        <p class="output blue">
+            Learning. Building. Doing.
+        </p>
+
+
+        <!-- NAVIGATION -->
+
+        <p class="prompt">
+            jaykrishna@portfolio:~$ ls
+        </p>
+
+        <div class="commands">
+
+            <a href="#about">about/</a>
+            <a href="#education">education/</a>
+            <a href="#skills">skills/</a>
+            <a href="#projects">projects/</a>
+            <a href="#contact">contact/</a>
+
+        </div>
+
+
+        <!-- ABOUT -->
+
+        <div class="section" id="about">
+
+            <p class="prompt">
+                jaykrishna@portfolio:~$ cat about.txt
+            </p>
+
+            <h2>ABOUT ME</h2>
+
+            <p>
+                Hello! I am Jaykrishna Manoj,
+                a student interested in public policy, management and global business.
+            </p>
+
+            <p>
+                I believe in learning, adaption and building meaningful work.
+            </p>
+
+        </div>
+
+
+        <!-- EDUCATION -->
+
+        <div class="section" id="education">
+
+            <p class="prompt">
+                jaykrishna@portfolio:~$ cat education.txt
+            </p>
+
+            <h2>EDUCATION</h2>
+
+            <p>
+                <span class="blue">[01]</span>
+                Our Own English High School, Al Warqa
+            </p>
+
+             <p>
+                <span class="blue">[02]</span>
+                Our Own High School, Al Warqa
+            </p>
+            <p>
+                <span class="blue">[02]</span>
+                IIM Bangalore - BBA Digital Business and Entrepreneurship
+            </p>
+
+            <p>
+                <span class="blue">[03]</span>
+                IIM Sambalpur - Bachleor of Science in management and public policy
+            </p>
+
+        </div>
+
+
+        <!-- SKILLS -->
+
+        <div class="section" id="skills">
+
+            <p class="prompt">
+                jaykrishna@portfolio:~$ ls skills/
+            </p>
+
+            <h2>AREAS OF INTEREST</h2>
+
+            <p>Entrepreneurship</p>
+            <p>Management</p>
+            <p>Leadership</p>
+            <p>Public Policy</p>
+
+        </div>
+
+
+        <!-- PROJECTS -->
+
+        <div class="section" id="projects">
+
+            <p class="prompt">
+                jaykrishna@portfolio:~$ ls projects/
+            </p>
+
+            <h2>PROJECTS & EXPERIENCES</h2>
+
+            <p class="yellow-text">
+                [Coming Soon]
+            </p>
+
+            <p>
+                Still classified!
+            </p>
+
+        </div>
+
+
+        <!-- CONTACT -->
+
+        <div class="section contact" id="contact">
+
+            <p class="prompt">
+                jaykrishna@portfolio:~$ cat contact.txt
+            </p>
+
+            <h2>CONTACT</h2>
+
+            <p>
+                Interested in connecting?
+            </p>
+
+            <p>
+                Email:
+                <a href="mailto:jaykrishna.manoj26@outlook.com">
+                    jaykrishna.manoj26@outlook.com
+                </a>
+            </p>
+
+            <p>
+                LinkedIn:
+                <a href="https://www.linkedin.com/in/jaykrishna-m-87703a423/">
+                    Connect with me
+                </a>
+            </p>
+
+        </div>
+
+
+        <!-- FOOTER -->
+
+        <div class="section">
+
+            <p class="prompt">
+                jaykrishna@portfolio:~$ exit
+            </p>
+
+            <p class="muted">
+                Connection closed. Thanks for visiting!
+            </p>
+
+            <br>
+
+            <p class="prompt">
+                jaykrishna@portfolio:~$
+                <span class="cursor"></span>
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
